@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".TrainingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="自分に合ったトレーニングをしてみよう！"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/level_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="レベル" />
+
+                        <Button
+                            android:id="@+id/level_button"
+                            style="@android:style/Widget.Holo.Light.Spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="選択してください" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/parts_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="パーツ" />
+
+                        <Button
+                            android:id="@+id/parts_button"
+                            style="@android:style/Widget.Holo.Light.Spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="選択してください" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="10dp"
+                        android:background="#CDCBCB"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/selected_title_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="あなたに合ったプログラム"
+                            android:textAlignment="center" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/selected_level_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="レベル：ー"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/selected_parts_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="パーツ：ー"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/start_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/clear_button_bg"
+                            android:drawableTop="@drawable/ic_baseline_play_35"
+                            android:text="スタート"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/explain_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/clear_button_bg"
+                            android:drawableTop="@drawable/ic_menu_book_35"
+                            android:text="メニュー一覧"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="15dp"
+                        android:text="エクササイズ一覧(部位別)"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/abs_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="15dp"
+                                app:srcCompat="@mipmap/ic_launcher" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="15dp"
+                                app:srcCompat="@mipmap/ic_launcher" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/ic_launcher" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/ic_launcher" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/ic_launcher" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/ic_launcher" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="15dp"
+                        android:text="おすすめのエクササイズプログラム"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton7"
+                                android:layout_width="123dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton9"
+                                android:layout_width="123dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton10"
+                                android:layout_width="123dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton11"
+                                android:layout_width="123dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton16"
+                                android:layout_width="123dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton12"
+                                android:layout_width="123dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton15"
+                                android:layout_width="123dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton14"
+                                android:layout_width="123dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <Button
+                        android:id="@+id/setmenu_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="あなたのセットメニュー" />
+
+                    <Button
+                        android:id="@+id/makeset_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="＋ セットメニューを作る" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

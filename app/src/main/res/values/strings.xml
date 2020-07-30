@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">bottomNav</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_selectsheet_product">セット名一覧画面</string>
+    <string name="name_selectsheet_listview">リスト表示画面</string>
+    <string name="name_selectsheet_tabel">セット検索画面</string>
+
+    <!-- ここからactivity_main 01関連 -->
+    <string name="text01_product">セット名</string>
+    <string name="text01_madein">運動量</string>
+    <string name="text01_number">時間(分)</string>
+    <string name="text01_price">回数</string>
+    <string name="text01_kome">※</string>
+    <string name="text01_hinttext">全角・半角12文字以内</string>
+    <string name="text01_hintnumber">半角数字</string>
+    <string name="button01_regist">登録</string>
+    <string name="button01_show">表示</string>
+
+    <!-- 選択用RadioButton -->
+    <string name="radio01_product">セット一覧 (ListView×ArrayAdapter)</string>
+    <string name="radio01_listview">リスト表示 (ListView×BaseAdapter)</string>
+    <string name="radio01_tablelayout">セット検索</string>
+    <!-- ここまで -->
+
+    <!-- ここからselect_sheet_product 02関連 -->
+    <!-- select_sheet_product 02 -->
+    <string name="text02_title_detail">セット一覧</string>
+    <string name="text02_title">セット一覧</string>
+    <string name="button02_alldelete">全削除</string>
+
+    <!-- row_sheet_listview 05 -->
+    <string name="text05_title_madein">運動量：</string>
+    <string name="text05_title_number">時間(分)：</string>
+    <string name="text05_title_price">回数：</string>
+    <!-- ここまで -->
+
+    <!-- select_sheet_listview 03 -->
+    <string name="text03_title_detail">リスト表示</string>
+
+    <!-- select_sheet_table 04 -->
+    <string name="text04_title_detail">セット検索</string>
+    <string name="text04_hinttext">品名を入力して下さい。</string>
+    <string name="button04_search">検索</string>
+    <string name="tab_text_1">エクササイズ内容</string>
+    <string name="tab_text_2">エクササイズ説明</string>
+
+</resources>

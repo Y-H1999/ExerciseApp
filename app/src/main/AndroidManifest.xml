@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bottomnav">
+
+    <application
+        android:name=".others.Global"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EmailPasswordActivity"></activity>
+        <activity android:name=".makeset.ExerciseSetting" />
+        <activity android:name=".makeset.MenuList" />
+        <activity android:name=".makeset.SetMenuTime" />
+        <activity android:name=".list.TricepsExercise" />
+        <activity android:name=".list.AbsExercise" />
+        <activity android:name=".list.BicepsExercise" />
+        <activity android:name=".makeset.ChoiceParts" />
+        <activity android:name=".makeset.MySetMenu" />
+        <activity android:name=".makeset.AddSetMenu" />
+        <activity android:name=".makeset.ChoiceExercise" />
+        <activity android:name=".makeset.SetMenuName" />
+        <activity
+            android:name=".setmenu.SetMenuActivity"
+            android:label="セットメニューを作る" />
+        <activity android:name=".setmenu.SelectSheetListView" />
+        <activity android:name=".setmenu.SelectSheetProduct" />
+        <activity android:name=".setmenu.SelectSheetTable" />
+        <activity
+            android:name=".AbsDetailActivity"
+            android:label="詳細情報" />
+        <activity
+            android:name=".AbsExActivity"
+            android:label="腹部のエクササイズ一覧" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

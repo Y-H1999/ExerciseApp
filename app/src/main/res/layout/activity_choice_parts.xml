@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E89D9D"
+    tools:context=".makeset.ChoiceParts">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/choice_parts_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="以下からパーツを選んでください"
+                    android:textAlignment="center"
+                    android:textColor="#AC2828"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/abs_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="腹部"
+                    app:layout_constraintTop_toBottomOf="@+id/choice_parts_text"
+                    tools:layout_editor_absoluteX="161dp" />
+
+                <Button
+                    android:id="@+id/biceps_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="上腕二頭筋"
+                    app:layout_constraintTop_toBottomOf="@+id/abs_btn"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <Button
+                    android:id="@+id/triceps_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="上腕三頭筋"
+                    app:layout_constraintTop_toBottomOf="@+id/biceps_btn"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <Button
+                    android:id="@+id/forearm_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="前腕"
+                    app:layout_constraintTop_toBottomOf="@+id/triceps_btn"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <Button
+                    android:id="@+id/spine_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="背部"
+                    app:layout_constraintTop_toBottomOf="@+id/forearm_btn"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <Button
+                    android:id="@+id/chest_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="胸部"
+                    app:layout_constraintTop_toBottomOf="@+id/spine_btn"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <Button
+                    android:id="@+id/shoulder_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="肩部"
+                    app:layout_constraintTop_toBottomOf="@id/chest_btn"
+                    tools:layout_editor_absoluteX="-37dp" />
+
+                <Button
+                    android:id="@+id/front_femur_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="大腿部(前方)"
+                    app:layout_constraintTop_toBottomOf="@+id/shoulder_btn"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <Button
+                    android:id="@+id/back_femur_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="大腿部(後方)"
+                    app:layout_constraintTop_toBottomOf="@id/front_femur_btn"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <Button
+                    android:id="@+id/lower_leg_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="下腿部"
+                    app:layout_constraintTop_toBottomOf="@+id/back_femur_btn"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <Button
+                    android:id="@+id/other_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="その他"
+                    app:layout_constraintTop_toBottomOf="@+id/lower_leg_btn"
+                    tools:layout_editor_absoluteX="0dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ListView
+            android:id="@+id/show_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

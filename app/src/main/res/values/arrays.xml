@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_abs">
+        <item>アブクランチマシン</item>
+        <item>アブドミナル4ポイントドローイングイン</item>
+        <item>アブドローレッグスライド</item>
+        <item>アラウンドザワールドプランク</item>
+        <item>ウィンズシールドワイパー</item>
+        <item>ウェイドボールサイドベンド</item>
+        <item>ウッドチョッパー</item>
+        <item>エアバイク</item>
+        <item>エクササイズボールクランチ</item>
+        <item>エクササイズボールプルイン</item>
+        <item>エクステンシブサイドプランク</item>
+        <item>オブリーククランチ</item>
+        <item>オブリークツイストウィズウェイトプレート</item>
+        <item>オブリークレイズオンパラレルバー</item>
+        <item>オルタネイトヒールタッチャーズ</item>
+        <item>オルタネイトリーチアンドキャッチ</item>
+        <item>オルタネイトレッグリバースハイパー</item>
+        <item>キッシングアンダーザアーチ</item>
+        <item>クラブクランチ</item>
+        <item>クラブリーチ</item>
+        <item>クランチ</item>
+        <item>クランチーフロッグ</item>
+        <item>クランチウィズハンズオーバーヘッド</item>
+        <item>クランチフロア</item>
+        <item>クランチベンチ</item>
+        <item>クランチレッグスオンエクササイズボール</item>
+        <item>クロスオーバークランチ</item>
+        <item>クロスボディークランチ</item>
+        <item>ケーブルクランチ</item>
+        <item>ケーブルサイドベンド</item>
+        <item>サイドVアップ</item>
+        <item>サイドティーザー</item>
+        <item>サイドトゥサイドチョップ</item>
+        <item>サイドプランク</item>
+        <item>サイドプランクウィズローテーション</item>
+        <item>サイドプランククランチ</item>
+        <item>サイドプランクベンド</item>
+        <item>サイドベンドオンベンチ</item>
+        <item>シーテッドアブクランチ</item>
+        <item>シーテッドバーベルツイスト</item>
+        <item>シーテッドフラットベンチレッグプルイン</item>
+        <item>シットアップ</item>
+        <item>ジャンダシットアップ</item>
+        <item>スカイキック</item>
+        <item>スクワットスラスト</item>
+        <item>スタンディングバーベルツイスト</item>
+        <item>スパイダーマンクライム</item>
+        <item>スプリンギングトライポッド</item>
+        <item>スプリンターシットアップ</item>
+        <item>セグメンタルローテーション</item>
+        <item>ダブルストレートレッグストレッチ</item>
+        <item>ティーザー2</item>
+    </string-array>
+
+    <string-array name="array_biceps">
+        <item>オルタネイトハンマーカール</item>
+        <item>オーバーヘッドカール</item>
+        <item>コンセントレーションカール</item>
+        <item>バイセップスカールダンベル</item>
+        <item>バイセップスカールバーベル</item>
+        <item>バイセップスカールデッドリフト</item>
+        <item>ロープハンマーカール</item>
+        <item>イージーバーカール</item>
+        <item>インクラインダンベルカール</item>
+        <item>オルタネイトインクラインダンベルカール</item>
+        <item>クロスボディハンマーカール</item>
+        <item>クロースグリップイージーバーカール</item>
+        <item>クロースグリップスタンディングバーベルカール</item>
+        <item>ケーブルプリーチャーカール</item>
+    </string-array>
+
+    <string-array name="array_triceps">
+        <item>JMプレス</item>
+        <item>シーテッドトライセップスプレス</item>
+        <item>スタンディングワンアームトライセップステンション</item>
+        <item>トライセップダンベルキックバック</item>
+        <item>トライセップスプッシュダウンVバー</item>
+        <item>バーベルインクライントライセップスエクステンション</item>
+        <item>ベンチディップス</item>
+        <item>ライングトライセップスプレス</item>
+        <item>ワンアームトライセップスエクステンション</item>
+        <item>インクライントライセップスエクステンション</item>
+        <item>オールドスクールリバースエクステンションズ</item>
+        <item>ケーブルインクライントライセップスエクステンション</item>
+        <item>ケーブルインクラインプッシュダウン</item>
+        <item>ケーブルライングトライセップスエクステンション</item>
+        <item>コブラ</item>
+        <item>シーテッドオーバーヘッドバーベルトライセップスエクステンション</item>
+        <item>シーテッドベントオーバーワンアームダンベルトライセップスエクステンション</item>
+        <item>スタンディングオーバーヘッドバーベルトライセップスエクステンション</item>
+        <item>スタンディングタオルトライセップスエクステンション</item>
+        <item>スタンディングダンベルトライセップスエクステンション</item>
+    </string-array>
+</resources>
