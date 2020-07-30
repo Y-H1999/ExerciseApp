@@ -38,5 +38,7 @@ public class ExerciseSetting extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
+
+        //ちょっと変更したよ。
     }
 }
