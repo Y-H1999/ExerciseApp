@@ -4,14 +4,18 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.bottomnav.R;
+import com.example.bottomnav.others.Global;
 
 public class FragmentExplain extends Fragment {
+    private TextView explain;
+    Global global;
 
     @Nullable
     @Override
@@ -19,7 +23,19 @@ public class FragmentExplain extends Fragment {
             @NonNull LayoutInflater inflater,
             @Nullable ViewGroup container,
             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_explain,container,false);
+        View v = inflater.inflate(R.layout.fragment_explain,container,false);
+
+        explain = v.findViewById(R.id.explain_txt);
+        global = (Global) this.getActivity().getApplication();
+
+        return v;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+
+//        explain.setText(global.getPlay());
+        explain.setText("エクササイズの説明です。");
     }
 
 }
