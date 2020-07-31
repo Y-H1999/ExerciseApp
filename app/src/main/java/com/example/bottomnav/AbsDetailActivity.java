@@ -12,6 +12,8 @@ public class AbsDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abs_detail);
+        
+        //aaaa
 
     }
 }
