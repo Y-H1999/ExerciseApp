@@ -1,6 +1,7 @@
 package com.example.bottomnav.food_mng;
 
 import android.content.Intent;
+// 岡本傑　けーすけ
 import android.os.Bundle;
 import android.view.MenuItem;
 
