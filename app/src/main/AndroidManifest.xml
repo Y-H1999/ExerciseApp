@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bottomnav">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:name=".others.Global"
         android:allowBackup="true"
@@ -10,7 +15,66 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EmailPasswordActivity"></activity>
+        <activity android:name=".UserActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@menu/menu_item" />
+
+        <activity
+            android:name=".notify.SubActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".notify.MainActivity"></activity>
+        <activity
+            android:name=".notify.SubActivity2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".notify.SubActivity3"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notify.SubActivity3_2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notify.SubActivity3_3"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notify.SubActivity3_4"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notify.SubActivity4"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notify.ImgActivity1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".notify.AddMyfoodActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".notify.MenuRegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notify.HistoryResearchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".notify.GraphActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".makeset.ExerciseSetting" />
         <activity android:name=".makeset.MenuList" />
         <activity android:name=".makeset.SetMenuTime" />
@@ -34,13 +98,38 @@
         <activity
             android:name=".AbsExActivity"
             android:label="腹部のエクササイズ一覧" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".setting.SettingActivity"></activity>
+        <activity android:name=".setting.UserInfoActivity"></activity>
+        <activity android:name=".setting.Setting_Ask_Activity"></activity>
+        <activity android:name=".setting.Setting_Pass_Activity"></activity>
+        <activity android:name=".setting.Mail_Change_Activity"></activity>
+
+        <service android:name=".setting.TestService"></service>
+        <service
+            android:name=".setting.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+<!--        太一-->
+        <activity android:name=".food_mng.HomeActivity"/>
+        <activity android:name=".food_mng.Fitness"/>
+        <activity android:name=".food_mng.SubActivity"/>
+        <activity android:name=".food_mng.SubActivity2"/>
+        <activity android:name=".food_mng.OptionActivity"/>
+        <activity android:name=".food_mng.SubActivity4"/>
+        <activity android:name=".food_mng.SubActivity5"/>
+        <activity android:name=".food_mng.SubActivity6"/>
+<!--        ここまで-->
     </application>
 
 </manifest>

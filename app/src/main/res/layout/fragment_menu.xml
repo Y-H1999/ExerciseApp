@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:onClick="onClickUserInfo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:id="@+id/userInfoButton"
+        android:text="@string/oneweek"
+        tools:ignore="ButtonStyle" />
+    <Button
+        android:onClick="onClickColor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:id="@+id/colorButton"
+        android:text="@string/onemonth"
+        tools:ignore="ButtonStyle" />
+
+
+    <Button
+        android:onClick="onClickDrink"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:id="@+id/drinkButton"
+        android:text="@string/threemonth"
+        tools:ignore="ButtonStyle" />
+    <Button
+        android:onClick="onClickFood"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:id="@+id/foodButton"
+        android:text="@string/halfyear"
+        tools:ignore="ButtonStyle" />
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="設定"
+    android:key="preference_root">
+
+    <PreferenceCategory android:title="基本設定"
+        app:iconSpaceReserved="false"
+        >
+
+        <PreferenceScreen
+            android:title="通知"
+            android:key="preference_alert"
+            app:iconSpaceReserved="false">
+
+            <SwitchPreferenceCompat
+                android:title="定時アラート"
+                android:key="preference_alert2"
+                android:defaultValue="false"
+                app:iconSpaceReserved="false"/>
+
+            <SwitchPreferenceCompat
+                android:title="アドバイス"
+                android:key="preference_adv"
+                android:defaultValue="false"
+                app:iconSpaceReserved="false"/>
+
+            <SwitchPreferenceCompat
+                android:title="メール配信"
+                android:key="preference_adv"
+                android:summary="@string/emailsum"
+                android:defaultValue="false"
+                app:iconSpaceReserved="false"/>
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="基本情報設定"
+            android:key="preference_user_info"
+            app:iconSpaceReserved="false">
+
+            <intent
+                android:targetPackage="com.example.bottomnav"
+                android:targetClass="com.example.bottomnav.setting.UserInfoActivity"/>
+
+        </PreferenceScreen>
+
+        <SwitchPreferenceCompat
+            android:key="preference_pass"
+            android:title="パスコードロック"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false">
+
+<!--            <intent-->
+<!--                android:targetPackage="com.example.mysetting2"-->
+<!--                android:targetClass="com.example.mysetting2.Setting_Pass_Activity"/>-->
+
+        </SwitchPreferenceCompat>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="アプリについて"
+        app:iconSpaceReserved="false">
+
+        <PreferenceScreen
+            android:title="アプリ概要"
+            android:key="preference_app"
+            app:iconSpaceReserved="false">
+
+            <PreferenceScreen />
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="バージョン情報"
+            android:key="preference_version"
+            app:iconSpaceReserved="false">
+
+            <PreferenceScreen />
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="お問い合わせ"
+            android:key="preference_res"
+            app:iconSpaceReserved="false">
+
+            <intent
+                android:targetPackage="com.example.bottomnav"
+                android:targetClass="com.example.bottomnav.setting.Setting_Ask_Activity"/>
+
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="規約"
+            android:key="preference_rule"
+            app:iconSpaceReserved="false">
+
+            <PreferenceScreen />
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="ログアウト/退会"
+        app:iconSpaceReserved="false">
+
+        <PreferenceScreen
+            android:title="ログアウト"
+            android:key="preference_logout"
+            app:iconSpaceReserved="false">
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="退会"
+            android:key="preference_stop"
+            app:iconSpaceReserved="false">
+<!--            <intent-->
+<!--                android:targetPackage="com.example.mysetting2"-->
+<!--                android:targetClass="com.example.mysetting2.Setting_Withdraw_Activity"/>-->
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

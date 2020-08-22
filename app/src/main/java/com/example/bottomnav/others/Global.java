@@ -14,6 +14,9 @@ public class Global extends Application {
     private int deleteCount = 1;
     private String play;
 
+    private String global_date = "";
+    private String global_meal;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -69,4 +72,36 @@ public class Global extends Application {
     public void removeNumberTimes() {numberTimes--;}
 
     public static Context getAppContext() {return context;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+
+    public String getTestString() {
+        return global_date;
+    }
+
+    public void setTestString(String str) {
+        global_date = str;
+    }
+
+    public String getMealString() {
+        return global_meal;
+    }
+
+    public void setMealString(String str) {
+        global_meal = str;
+    }
+
 }

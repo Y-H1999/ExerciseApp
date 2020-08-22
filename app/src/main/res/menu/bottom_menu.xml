@@ -6,6 +6,10 @@
         android:title="ホーム"
         android:icon="@drawable/ic_baseline_home_24" />
     <item
+        android:id="@+id/foodFragment"
+        android:title="食事管理"
+        android:icon="@drawable/ic_baseline_local_dining_24" />
+    <item
         android:id="@+id/trainingFragment"
         android:title="トレーニング"
         android:icon="@drawable/ic_baseline_directions_run_24"/>

@@ -1,0 +1,48 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SubActivity">
+
+    <item
+        android:id="@+id/menuDialog"
+        android:title="@string/menu_dialog"
+        android:icon="@android:drawable/ic_menu_today"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menuBody"
+        android:title="@string/menu_body"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menuMeal"
+        android:title="@string/menu_meal"
+        app:showAsAction="never"
+        >
+        <menu>
+            <item
+                android:id="@+id/menuBreakfast"
+                android:title="@string/menu_breakfast"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/menuLunch"
+                android:title="@string/meun_lunch"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/menuSnack"
+                android:title="@string/menu_snack"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/menuDinner"
+                android:title="@string/menu_dinner"
+                app:showAsAction="never"
+                />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menuExercise"
+        android:title="@string/menu_exercise"
+        app:showAsAction="never"
+        />
+
+</menu>

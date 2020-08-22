@@ -11,6 +11,11 @@
         android:label="ホーム"
         tools:layout="@layout/fragment_home" />
     <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.bottomnav.FoodFragment"
+        android:label="食事管理"
+        tools:layout="@layout/frgment_food" />
+    <fragment
         android:id="@+id/trainingFragment"
         android:name="com.example.bottomnav.TrainingFragment"
         android:label="トレーニング"

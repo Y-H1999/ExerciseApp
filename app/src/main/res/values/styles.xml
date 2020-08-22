@@ -2,11 +2,100 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+<!--        <item name="windowNoTitle">true</item>-->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.Custom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+<!--    萩森-->
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.MyToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/record1</item>
+    </style>
+
+    <style name="AppTheme.MyCameraToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/camera</item>
+    </style>
+
+    <style name="AppTheme.MyKeyToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/keyselect</item>
+    </style>
+
+    <style name="AppTheme.MyWeightToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/text1</item>
+    </style>
+
+    <style name="AppTheme.MyAddToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/myset</item>
+    </style>
+
+    <style name="AppTheme.MySelToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/menuselect</item>
+    </style>
+
+    <style name="AppTheme.MySerToolbar1" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/histitle</item>
+    </style>
+
+    <style name="AppTheme.MyGraphToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/graph</item>
+    </style>
+
+    <style name="AppTheme.GraphToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/graph</item>
+    </style>
+
+    <string name="record1">記録</string>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Setting_User_Info_Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/set_user_info_title</item>
+    </style>
+
+    <style name="AppTheme.Setting_Stop_Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/set_stop_title</item>
+    </style>
+
+    <style name="AppTheme.Setting_Ask_Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/otoiawase</item>
+    </style>
+
+    <style name="AppTheme.Setting_Pass_Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/pass_cord</item>
+    </style>
+
+    <style name="AppTheme.Setting_Mail_Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/mail_setting</item>
+    </style>
+
+    <string name="pass_cord">パスコード</string>
+    <string name="mail_setting">メールアドレス設定</string>
+<!--    ここまで（萩森）-->
+
+<!--    西岡-->
+    <style name="AppTheme.Fragment_meal_Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/meal_setting</item>
+    </style>
+
+    <style name="AppTheme.Fragment_fit_Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="title">@string/fit_setting</item>
+    </style>
+
+    <string name="meal_setting">食事管理</string>
+    <string name="fit_setting">フィットネス</string>
+<!--    ここまで（西岡）-->
+
 
 </resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".notify.ImgActivity1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myitemtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3CB371"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.MyKeyToolbar"
+        app:titleTextColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|top"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/search_edit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/foodname"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/search_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/searchingbtn"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+            <com.example.bottomnav.notify.NonScrollListView
+                android:id="@+id/search_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+            </com.example.bottomnav.notify.NonScrollListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

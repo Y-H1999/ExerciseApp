@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/nickname_edit"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginHorizontal="80dp"-->
+    <!--        android:layout_marginTop="48dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:gravity="start|top"-->
+    <!--        android:hint="ニックネーム"-->
+    <!--        android:inputType="textMultiLine"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <RadioGroup-->
+    <!--        android:id="@+id/mw_group"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginHorizontal="80dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/nickname_edit">-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/radioButton"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:text="男性" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/radioButton2"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:text="女性" />-->
+    <!--    </RadioGroup>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linear_birth"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginHorizontal="70dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/mw_group"-->
+    <!--        tools:layout_editor_absoluteX="80dp">-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/year_edit"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="0.15"-->
+    <!--            android:ems="10"-->
+    <!--            android:gravity="start|top"-->
+    <!--            android:inputType="textMultiLine" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView3"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="0"-->
+    <!--            android:text="年" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/month_edit"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="0.2"-->
+    <!--            android:ems="10"-->
+    <!--            android:gravity="start|top"-->
+    <!--            android:inputType="textMultiLine" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView4"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="0"-->
+    <!--            android:text="月" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/day_edit"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="0.2"-->
+    <!--            android:ems="10"-->
+    <!--            android:gravity="start|top"-->
+    <!--            android:inputType="textMultiLine" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView5"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="0"-->
+    <!--            android:text="日生まれ" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linear_tall"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginHorizontal="80dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/linear_birth">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView6"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="0"-->
+    <!--            android:text=" 身長： " />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/tall_edit"-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:ems="10"-->
+    <!--            android:gravity="start|top"-->
+    <!--            android:inputType="textMultiLine" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView7"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="0"-->
+    <!--            android:text="  cm" />-->
+    <!--    </LinearLayout>-->
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Eメールアドレス"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:ems="10"
+        android:hint="パスワード"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="89dp" />
+
+    <Button
+        android:id="@+id/Sbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="サインアップ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="アカウントをお持ちの方はここからサインイン"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sbutton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

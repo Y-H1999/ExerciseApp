@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/newmyfoodtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3CB371"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.MyAddToolbar"
+        app:titleTextColor="#ffffff">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/setn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:layout_marginTop="40dp"
+                android:textColor="#FF0000"
+                android:text="@string/disc" />
+
+            <EditText
+                android:id="@+id/setname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:background="#ffffff"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:ignore="LabelFor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/bunryo"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/setg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint=""
+                    android:background="#ffffff"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/setc"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="@string/g" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/hissu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="#FF0000"
+                    android:text="@string/hissu" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/kcal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:text="@string/ener" />
+
+                <EditText
+                    android:id="@+id/setc"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:autofillHints=""
+                    android:background="#ffffff"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/encal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:text="@string/kcal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/hissu2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="#FF0000"
+                    android:text="@string/hissu" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <TextView
+                    android:id="@+id/carbon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:text="@string/carbon" />
+
+                <EditText
+                    android:id="@+id/carbon_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:autofillHints=""
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/carbong"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:text="@string/g" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <TextView
+                    android:id="@+id/protain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:text="@string/protain" />
+
+                <EditText
+                    android:id="@+id/edit_pro"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="15dp"
+                    android:autofillHints=""
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginStart="10dp"
+
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.967"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/protaing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:text="@string/g" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:id="@+id/fat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:text="@string/fat" />
+
+                <EditText
+                    android:id="@+id/fat_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:autofillHints=""
+                    android:background="#ffffff"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/fatg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:text="@string/g" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bikou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:text="@string/bikou" />
+
+            <EditText
+                android:id="@+id/detail"
+                android:layout_width="280dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:gravity="top"
+                android:autofillHints=""
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="@string/konbini"
+                android:inputType="textMultiLine"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

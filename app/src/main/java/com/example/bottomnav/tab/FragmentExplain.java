@@ -33,9 +33,16 @@ public class FragmentExplain extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        String[] exercise_abs = getResources().getStringArray(R.array.array_abs);
+        String[] explains = getResources().getStringArray(R.array.array_explain);
+        String[] codes = getResources().getStringArray(R.array.array_code);
 
-//        explain.setText(global.getPlay());
-        explain.setText("エクササイズの説明です。");
+        for (int i = 0; i < exercise_abs.length; i++) {
+            if (global.getPlay().equals(exercise_abs[i])) {
+                explain.setText(explains[i] + "\n識別コードは " + codes[i] + " です");
+                break;
+            }
+        }
     }
 
 }
